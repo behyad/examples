@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body onclick="showCoords(event)" style="border: 1px solid black; padding: 4px;">
+    <h1>
+        Mouse Event
+    </h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function showCoords(event) {
+            let x = event.pageX;
+            let y = event.pageY;
+            let z = event.pageZ;
+            let text = "X coords:" + x + "Y coords:" + y + "Z coords:" + z;
+            document.getElementById("demo").innerHTML = text;
+            document.getElementById("demo2").innerHTML = event;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        class persons{
+            name=this.name;
+            teachers=this.teachers;
+            year=this.year;
+        }
+        class Techer extends persons {
+            constructor(name, teachers) {
+                super(name);
+                this.teachers = teachers;
+            }
+            introduceSelf() {
+                console.log(
+                    `my name is ${this.name},and i will your ${this.teachers}`
+                );
+            }
+            grade(paper){
+                const grade=Math.floor(Math.random()*(5-1)+1);
+            }
+        }
+        class student extends person{
+            year;
+            constructor(name,year){
+                super(name);
+                this.year=year;
+            }
+            introduceSelf(){
+                console.log(`hi i'm ${this.name},and i'm in year ${this.year}`);
+            }
+            canStudy(){
+                return this.year>1;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

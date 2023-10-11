@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        let shooesBrand = {
+            name: "shoes",
+            shoes: [
+                { name: "nike", model: ["1a", "14gh", "09lk"] },
+                { name: "puma", model: ["12", "1345", "rdsa"] },
+                { name: "addidas", model: ["1", "2", "3"] },
+            ]
+        }
+        for (let i in shooesBrand.shoes) {
+            x += "<h1>" + shooesBrand.shoes[i].name + "<h1>";
+            for (let j in shooesBrand.shoes[i].model) {
+                x += shooesBrand.shoes[i].model[j];
+            }
+        }
+    </script>
+
+</body>
+
+</html>

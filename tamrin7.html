@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .row{
+            height:65px;
+            width: 65px;
+            float: left;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+    <script>
+        function random(x){
+            return Math.floor(Math.random()*x);
+        }
+        function changeBckround(){
+            let changeColor=rgb`(${random(255)},${random(255)},${random(255)})`;
+            return changeColor;
+        }
+    </script>
+</body>
+
+</html>

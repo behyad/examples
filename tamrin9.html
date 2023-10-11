@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="fname">first name</label>
+            <input id="fname" type="text" />
+        </div>
+        <div>
+            <label for="lastname">last name</label>
+            <input id="lastname" type="text" />
+        </div>
+        <div>
+            <label for="pass">password</label>
+            <input id="password" type="password" />
+        </div>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+    </form>
+    <p></p>
+    <script>
+        let form = document.querySelector("form");
+        let fname = document.querySelector("#fname");
+        let lastname = document.querySelector("#lastname");
+        let p = document.querySelector("p");
+        let password = document.querySelector("#password");
+        function checkForm(event) {
+            if (fname.value == "" || lastname.value == "" || password.value == "") {
+                event.preventDefault();
+                p.textContent = "something is wrong!"
+            }
+        }
+        form.addEventListener("submit", checkForm);
+    </script>
+</body>
+
+</html>
